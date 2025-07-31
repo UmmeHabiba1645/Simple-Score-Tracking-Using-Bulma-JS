@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <title>Score Display</title>
+
+</head>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-3">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-0.1by0">
+                            <img src="D:\course\123.webp" alt="Batminton" style="height: 250px; object-fit: cover;">
+                        </figure>
+                    </div>
+  <header class="card-header">
+    <p class="card-header-title">Batminton Score Keeper</p>
+    <button class="card-header-icon" aria-label="more options">
+      <span class="icon">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </header>
+  <div class="card-content">
+        <h1 class="title is-1"><span id="P1Display">0</span> vs <span id="P2Display">0</span></h1>
+    <p class="subtitle">Select the score of teams.</p>   
+ <div class="selecct is-warning">
+    <label for="winsc">Select Wining Score:</label>
+        <select id="winsc">
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select></div>  
+    </div>
+  </div>
+  <footer class="card-footer">
+     <button id="AddTeam1" class="card-footer-item button is-info is-large ">Add Team 1</button>
+        <button id="AddTeam2" class="card-footer-item button is-success is-large">Add Team 2</button>
+    <button id="resetButton" class="card-footer-item button is-danger is-large">Reset</button>
+  </footer>
+</div>
+            </div>
+        </div>
+</section>
+    <script src="app.js"></script>
+</body>
+</html>
